@@ -74,19 +74,26 @@ call vundle#begin()
   Plugin 'tpope/vim-surround'
   Plugin 'terryma/vim-multiple-cursors'
   Plugin 'tpope/vim-fugitive'
-  Plugin 'kien/ctrlp.vim'
+  Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'ddollar/nerdcommenter'
   Plugin 'ervandew/supertab'
   Plugin 'jeetsukumaran/vim-buffergator'
   Plugin 'scrooloose/syntastic'
   Plugin 'bronson/vim-trailing-whitespace'
+  Plugin 'sjl/gundo.vim'
+  Plugin 'vim-scripts/taglist.vim'
 
   " Coloring
-  Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/colors/' }
-  
-  
+  Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
+
+
   " HTML
   Plugin 'mattn/emmet-vim'
+
+  " Css
+  Plugin 'hail2u/vim-css3-syntax'
+  Plugin 'groenewege/vim-less'
+  Plugin 'skammer/vim-css-color'
 
 call vundle#end()
 " End vim plugins
@@ -105,5 +112,8 @@ nmap <leader>w :w<CR>
 nmap <leader>W :w<CR>
 nmap <leader>h :nohl<cr>
 
-
+"" 
+"" Plugins Remaps
+""
+nnoremap <leader>u :GundoToggle<CR>
 
